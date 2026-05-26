@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+ <div id="completeCal">
+    <input id="result" type="text" readonly>
+    <div id="pannel">
+        <div id="row1">
+            <button onclick="appendPercentage('%')">%</button>
+            <button onclick="appendPower('x^')">x^m</button>
+            <button onclick="clearTheDisplay('CE')">CE</button>
+            <button onclick="CompleteClearDisplay('C')">C</button>
+        </div>
+        <div id="row2">
+            <button onclick="reciprocal()">1/x</button>
+            <button onclick="appendSquare('**2')">X²</button>
+            <button onclick="root()">rootx</button>
+            <button onclick="appendToDisplay('/')">/</button>
+        </div>
+        <div id="row3">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+        </div>
+        <div id="row4">
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+        </div>
+        <div id="row5">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+        </div>
+        <div id="row6">
+            <button onclick="toNegative('negative')">negative</button>
+            <button onclick="appendToDisplay('8')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="totalValue('=')">=</button>
+        </div>
+    </div>
+ </div>   
+</body>
+<script src="index.js"></script>
+</html>

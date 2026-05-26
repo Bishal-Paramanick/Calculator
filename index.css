@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: #e3e0e0e4;
+}
+#completeCal{
+    margin-top: 100px;
+    width:320px;
+    background-color: #202124;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px rgba(0,0,0,0.1);
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+#result{
+    color: white;
+    text-align: right;
+    padding: 20px;
+    height: 50px;
+    font-size: 2.5rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #312f2f;
+    user-select: all;
+    cursor: default;
+}
+#pannel{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height:400px;
+}
+#pannel>div{
+    display:flex;
+    flex: 1;
+    gap:10px;
+}
+#pannel>div>button{
+   flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color:white;
+    border:1px solid #333;
+    border-radius:10px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+#pannel>div>button:hover{
+    background-color: #333;
+}
+#row6 button:last-child{
+    background-color: #007bff;
+    color:white;
+    border:none;
+}
+#row6 button:last-child:hover{
+    background-color: #0056b3;
+}
+button:focus{
+    outline:none;
+}
+.key-active{
+    background-color: #555!important;
+    transform: scale(0.95);
+    transition: 0.1s;
+}
